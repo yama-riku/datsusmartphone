@@ -1,16 +1,16 @@
 <?php
 
-require_once '../classes/UserLogic.php';
+// require_once '../classes/UserLogic.php';
 
-$sw = new Stopwatch();
+// $sw = new Stopwatch();
  
-$sw->Start();
+// $sw->Start();
  
-// 計測したい処理...
+// // 計測したい処理...
  
-$sw->Stop();
+// $sw->Stop();
  
-echo  $sw->ElapsedString();
+// echo  $sw->ElapsedString();
 
 
 

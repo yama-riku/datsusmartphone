@@ -1,0 +1,1 @@
+web: vender/bin/heroku-php-apache2 datsu_smartphone/login_form.php
