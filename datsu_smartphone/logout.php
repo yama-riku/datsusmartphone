@@ -33,7 +33,7 @@ UserLogic::logout();
         <main>
             <div class = "logout">
                 <h1>ログアウト完了</h1>
-                <a href = "login_form.php">ログイン画面へ</a>
+                <a href = "index.php">ログイン画面へ</a>
             </div>
         </main>
     </body>

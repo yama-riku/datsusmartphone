@@ -27,7 +27,7 @@ if(!$password = filter_input(INPUT_POST, 'password')
 if (count($err) > 0) {
     // エラーがあった場合は戻す
     $_SESSION = $err;
-    header('Location: login_form.php');
+    header('Location: index.php');
     return;
 }
 // ログイン成功時の処理
@@ -35,7 +35,7 @@ $result = UserLogic::login($email,$password);
 
 // ログイン失敗時の処理
 if (!$result) {
-    header('Location: login_form.php');
+    header('Location: index.php');
     return;
 }
 
