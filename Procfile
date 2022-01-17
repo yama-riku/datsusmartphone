@@ -1,1 +1,1 @@
-web: php -S 0.0.0.0:$PORT
+web: vender/bin/heroku-php-apache2 datsu_smartphone
