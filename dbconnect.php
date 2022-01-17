@@ -3,10 +3,10 @@
 ini_set('display_errors',true);
 function connect()
 {
-  $host = DB_HOST;
-  $db   = DB_NAME;
-  $user = DB_USER;
-  $pass = DB_PASS;
+  $host = getenv('DB_HOST');
+  $db   = getenv('DB_NAME');
+  $user = getenv('DB_USER');
+  $pass = getenv('DB_PASS');
 
   $dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
 
