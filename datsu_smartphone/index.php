@@ -1,4 +1,4 @@
-<?php header('Location: /index.html');
+<?php 
 session_start();
 
 require_once '../classes/UserLogic.php';
