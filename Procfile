@@ -1,1 +1,1 @@
-web: vender/bin/heroku-php-apache2 datsu_smartphone/
+web: vender/bin/heroku-php-apache2 datsu_smartphone
