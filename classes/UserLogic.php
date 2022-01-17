@@ -113,7 +113,7 @@ class UserLogic
     public static function deleteTimer($deleteData){
         $sql = 'DELETE 
                   FROM timer
-                 WHERE email = ?
+                  WHERE email = ?
                   ';
 
         //　タイマーデータを配列に加える
@@ -183,9 +183,9 @@ class UserLogic
                     ,timer.email
                     ,timer.start
                     ,timer.stop
-                FROM timer
-               WHERE timer.email = ?
-               ORDER by timer.timer_id DESC
+              FROM timer
+              WHERE timer.email = ?
+              ORDER by timer.timer_id DESC
             ';
 
       //　タイマーデータを配列に加える
@@ -218,8 +218,8 @@ class UserLogic
       
 
       $sql = 'UPDATE timer
-                 SET stop = ?
-               WHERE timer.email = ?
+              SET stop = ?
+              WHERE timer.email = ?
             ';
 
       //　タイマーデータを配列に加える
@@ -256,8 +256,8 @@ class UserLogic
       // emailとdateは後で消す
       $sql = 'SELECT datsu_work.date 
                     ,datsu_work.time
-                FROM datsu_work
-               WHERE datsu_work.email = ? AND datsu_work.date = ?
+              FROM datsu_work
+              WHERE datsu_work.email = ? AND datsu_work.date = ?
             ';
 
       //　タイマーデータを配列に加える
@@ -295,8 +295,8 @@ class UserLogic
         
 
       $sql = 'UPDATE datsu_work
-                 SET time = ?
-               WHERE datsu_work.email = ? AND datsu_work.date = ?
+              SET time = ?
+              WHERE datsu_work.email = ? AND datsu_work.date = ?
             ';
 
       //　タイマーデータを配列に加える
@@ -370,8 +370,8 @@ class UserLogic
                     ,datsu_work.time
                     ,datsu_work.comment
                     ,datsu_work.id
-                FROM datsu_work
-               WHERE datsu_work.email = ? 
+              FROM datsu_work
+              WHERE datsu_work.email = ? 
             ';
 
 
@@ -406,9 +406,9 @@ class UserLogic
       // emailとdateは後で消す
       $sql = 'SELECT datsu_work.date 
                     ,datsu_work.comment
-                FROM datsu_work
-               WHERE datsu_work.email = ?
-                 AND datsu_work.date = ?
+              FROM datsu_work
+              WHERE datsu_work.email = ?
+              AND datsu_work.date = ?
             ';
 
       //　タイマーデータを配列に加える
@@ -445,8 +445,8 @@ class UserLogic
         
 
       $sql = 'UPDATE datsu_work
-                 SET comment = ?
-               WHERE datsu_work.email = ? AND datsu_work.date = ?
+              SET comment = ?
+              WHERE datsu_work.email = ? AND datsu_work.date = ?
             ';
 
       //　配列に加える
