@@ -52,7 +52,7 @@ unset($_SESSION['login_err']);
                 </form>
             
                 <div class ="return">
-                    <a href = "index.php">※ログインする</a>
+                    <a href = "login_form.php">※ログインする</a>
                 </div>
             </div>
         </div>
