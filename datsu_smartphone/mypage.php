@@ -94,15 +94,9 @@ if ( isset( $_POST['edit_month'] ) ) {
 
         }else{
             $correct_day = ' ※正しい日付を入力して下さい';
-        }
-
-        $correct_day = ' ※正しい日付を入力して下さい';    
+        }   
 
     }
-
-
-} else {
-    // echo '受け取れてないよ';
 }
 
 // if ( isset( $_POST['edit_comment'] ) ) {
@@ -125,10 +119,12 @@ if ( isset( $_POST['edit_month'] ) ) {
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "mypage.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
     <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css”>
-    <!-- <script src = "mypage.js" defer></script> -->
+    <script src = "mypage.js" defer></script>
     <title>マイページ</title>
 </head>
 <body>
@@ -228,37 +224,10 @@ if ( isset( $_POST['edit_month'] ) ) {
         </form>
 
         <div class = footer>
-            <p>datsu_smartphone@2022</p>                    
+            <p><small>&copy;datsusmartphone</p>                    
         </div>
 
-        <!-- <form action = "" method = "POST">
-            <input type = "hidden" name = "modal_month" value = "<?php echo  $yyyymm;?>">
         
-        </form> -->
-
-        <!-- <form action = "logout.php" method = "POST">
-            <input type = "submit" name = "logout" value = "ログアウト">
-        </form> -->
-
-        <!-- <form action="" method="post">
-        <input type="hidden" name="modal_month" value="<?php echo $yyyymm; ?>">
-        <div>
-            <h1><?= $yyyymm?></h1>
-
-        </div>
-        <input type="submit" value="送信">
-        </form> -->
-
-        
-
-        
-
-      
-
-        <!-- <form action = "logout.php" method = "POST">
-        <input type = "submit" name = "logout" value = "ログアウト"></form>
-        <form action = "taskpage.php" method = "POST">
-        <input type = "submit" name = "task" value = "タスク"></form> -->
     </main>
 </body>
 </html>
